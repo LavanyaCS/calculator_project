@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- META INFO -->
+    <meta name="author" content="Lavanya Chandran">
+    <meta name="description"
+        content="A Simple Grade Calculator by Lavanya Chandran. Enter marks for five subjects, and calculate total, average, and grade using JavaScript.">
+    <meta name="keywords"
+        content="Grade Calculator, JavaScript Project, Lavanya Chandran, Student Projects, Web Development, JS Conditional Statements">
+    <title>Simple Grade Calculator</title>
+    <!--Custom Css-->
+    <link href="css/style.css" rel="stylesheet" />
+    <!--Bootstrap5 CSS CDN-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Bootstrap5 JS CDN-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark text-white bg-dark fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#grade" target="_blank">JavaScript</a>
+
+        </div>
+    </nav>
+
+    <!--hero section-->
+    <section id="grade" class="bg-white py-5 contact mt-5">
+
+
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Simple Calculator</h2>
+            <div class="calculator p-4 shadow-sm bg-white">
+                <input type="text" id="result" class="form-control mb-3" readonly>
+
+                <div class="row g-2">
+                    <div class="col-3"><button class="btn btn-primary w-100" value="7">7</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" value="8">8</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" value="9">9</button></div>
+                    <div class="col-3"><button class="btn btn-warning w-100" value="/">/</button></div>
+
+                    <div class="col-3"><button class="btn btn-primary w-100" value="4">4</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" value="5">5</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" value="6">6</button></div>
+                    <div class="col-3"><button class="btn btn-warning w-100" value="*">*</button></div>
+
+                    <div class="col-3"><button class="btn btn-primary w-100" value="1">1</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" value="2">2</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" value="3">3</button></div>
+                    <div class="col-3"><button class="btn btn-warning w-100" value="-">-</button></div>
+
+                    <div class="col-3"><button class="btn btn-danger w-100" id="clear">C</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" value="0">0</button></div>
+                    <div class="col-3"><button class="btn btn-success w-100" id="equal">=</button></div>
+                    <div class="col-3"><button class="btn btn-warning w-100" value="+">+</button></div>
+
+                    <div class="col-6"><button class="btn btn-secondary w-100" id="square">x²</button></div>
+                    <div class="col-6"><button class="btn btn-secondary w-100" id="cube">x³</button></div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <footer class="fixed-bottom bg-dark text-white py-2">
+        <div class="container text-center">
+            <!-- Copyright -->
+            <h5>&copy; 2025 Lavanya Chandran | All rights reserved.</h5>
+        </div>
+    </footer>
+    <!--Custom Script File-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
