@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- META INFO -->
     <meta name="author" content="Lavanya Chandran">
-   <meta name="description" content="A Phonebook application by Lavanya Chandran built using Fetch API and asynchronous JavaScript. Perform CRUD operations to manage contact details dynamically.">
-<meta name="keywords" content="Phonebook App, JavaScript Project, Fetch API, Async JavaScript, CRUD Operations, Lavanya Chandran, Web Development">
-<title>Phonebook with Fetch API and Async JavaScript</title>
+    <meta name="description"
+        content="A Phonebook application by Lavanya Chandran built using Fetch API and asynchronous JavaScript. Perform CRUD operations to manage contact details dynamically.">
+    <meta name="keywords"
+        content="Phonebook App, JavaScript Project, Fetch API, Async JavaScript, CRUD Operations, Lavanya Chandran, Web Development">
+    <title>Phonebook with Fetch API and Async JavaScript</title>
     <!--Custom Css-->
     <link href="css/style.css" rel="stylesheet" />
     <!--Bootstrap5 CSS CDN-->
@@ -16,24 +18,24 @@
     <!--Bootstrap5 JS CDN-->
     <script src="js/bootstrap.bundle.min.js"></script>
 
-<style>
-  
-</style>
+    <style>
+
+    </style>
 </head>
 
 <body>
 
-   <nav class="navbar navbar-expand-lg navbar-dark text-white bg-dark fixed-top py-3">
+     <nav class="navbar navbar-expand-lg navbar-dark text-white bg-dark fixed-top py-3">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html" target="_blank">Fetch API using JavaScript</a>
+      <a class="navbar-brand" href="index.html" target="_blank">Fetch API using JavaScript</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbar-menu">
         <ul class="navbar-nav ms-auto text-white fw-medium fs-6">
-          <li class="nav-item"><a href="index.html" class="nav-link text-white fw-bold"><i class="fa-solid fa-house me-1"></i>
+          <li class="nav-item"><a href="index.html" class="nav-link text-white"><i class="fa-solid fa-house me-1"></i>
               Home</a></li>
-          <li class="nav-item"><a href="product.html" class="nav-link text-white"><i
+          <li class="nav-item"><a href="product.html" class="nav-link text-white fw-bold"><i
                 class="fa-solid fa-address-card me-1"></i> Product</a></li>
           <li class="nav-item"><a href="user.html" class="nav-link text-white"><i
                 class="fa-solid fa-diagram-project me-1"></i> User</a></li>
@@ -41,19 +43,22 @@
       </div>
     </div>
   </nav>
+
+
     <!-- Hero Section or Banner -->
-<section id="api" class="bg-light text-center py-5 h-100">
-  <div class="container d-flex justify-content-center align-items-center h-100 flex-column">
-    <h1 class="display-5 fw-bold">Welcome to Our Demo App</h1>
-    <p class="lead">Showcasing real-time data fetched from public APIs using JavaScript.</p>
-      <div class="d-flex justify-content-center w-100 gap-4">
-        <a href="product.html" class="btn btn-outline-primary text-decoration-none">View All Products</a>
-        <a href="user.html" class="btn btn-outline-success text-decoration-none">View All Users</a>
-</div>
-</div>
-</section>
+    <section id="productapi" class="bg-light text-center py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 section-title">Product Details</h2>
+            <div id="products-container" class="row"></div>
+        </div>
+    </section>
 
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchproductapiData();
+        });
+    </script>
 
 
     <footer class="fixed-bottom bg-dark text-white py-2">
