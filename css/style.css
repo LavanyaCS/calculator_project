@@ -4,7 +4,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f9fa;
-  padding: 2rem 0rem;height: 100vh;
+  padding: 30px;
 }
 .section-title {
   font-size: 2rem;
@@ -48,50 +48,27 @@ body {
 .navbar-nav .nav-link {
   font-weight: normal;
 }
-.product-details-list .product-title {
-  max-width: 100%;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.5;
-  height: calc(1.5em * 1); /* 4 lines of text */
-}
-.product-details-list .product-description {
-  max-width: 100%;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.5;
-  height: calc(1.5em * 4); /* 4 lines of text */
-}
-.w-fit{
-  width: fit-content !important;
+
+
+.calculator {
+  max-width: 400px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-#products-container .product-details-list,
-#users-container .user-details-list{
-  border: 0.0625rem solid #e9e4e4 !important;
-    background: #fff !important;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 0 0.625rem rgb(197,186,186,0.3);
+input#result {
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+button {
+  font-size: 1.2rem;
 }
 
-#users-container .user-details-list .user-info .w-28{
-  width: 7rem;
-}
-
-#users-container .user-details-list .user-info .w-4{
-  width: 1rem;
-}
-
-#users-container .user-details-list img,
-#products-container .product-details-list .w-48.h-48{
-  width: 12rem;height:12rem;object-fit: contain;
-}
 /* Responsive:screens */
 
 @media (max-width: 450px) {
